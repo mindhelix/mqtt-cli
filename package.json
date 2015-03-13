@@ -1,5 +1,5 @@
 {
-  "name": "nmbl-events",
+  "name": "nmbl-mqtt",
   "version": "1.0.0",
   "description": "",
   "main": "nmbl.js",
