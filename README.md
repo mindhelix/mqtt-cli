@@ -7,10 +7,8 @@ Default mqtt server: [mqtt://smartsocket.getmyrico.com](mqtt://smartsocket.getmy
 
 ## Installation & Usage
 
-You will need Node.js v0.10.36 or higher.
+Download nmbl-mqtt events application from [https://bitbucket.org/mindhelix/nmbl-mqtt/downloads](here).
 
-Browse to the directory and do `npm install`.
+Browse to the directory and do `npm install`. You will need Node.js v0.10.36 or higher.
 
-Usage: `node nmbl topic message`
-
-See `node nmbl -h` for more details.
+Usage: `node nmbl topic message`. See `node nmbl --help` for more details.
