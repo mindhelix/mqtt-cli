@@ -1,0 +1,14 @@
+{
+  "name": "nmbl-events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nmbl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jinsu Mathew <jinsu@mindhelix.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^1.0.3"
+  }
+}
