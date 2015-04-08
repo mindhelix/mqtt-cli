@@ -9,4 +9,4 @@ Download mqtt-cli application from [here](https://bitbucket.org/mindhelix/nmbl-m
 
 Browse to the directory and do `npm install`. You will need Node.js v0.10.36 or higher.
 
-Usage: `node mqtt-cli topic message`. See `node nmbl --help` for more details.
+Usage: `node mqtt-cli topic message`. See `node mqtt-cli --help` for more details.
