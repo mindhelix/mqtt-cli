@@ -7,7 +7,10 @@
 * @date: 22/01/2015
 */
 
+// Module dependencies
 var mqtt    = require('mqtt');
+var fs = require('fs');
+var path = require('path');
 
 if (! process.argv[2] || process.argv[2] == '--help' || process.argv[2] == '-h') {
   console.log('Usage: mqtt-cli hostname topic payload \n\te.g. mqtt-cli test.mosquitto.org Hello "Test hello message"');
@@ -16,7 +19,8 @@ if (! process.argv[2] || process.argv[2] == '--help' || process.argv[2] == '-h')
 }
 
 if (process.argv[2] == '--version' || process.argv[2] == '-v') {
-  console.log('v1.0.0');
+  var packageJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'package.json'), 'utf-8'));
+  console.log('v' + packageJson.version);
   process.exit(0);
 }
 
