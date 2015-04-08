@@ -1,6 +1,6 @@
 {
   "name": "mqtt-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A node command line app to send mqtt messages through a mqtt broker. Can also be used to subscribe and listen to incoming messages on a topic.",
   "main": "mqtt-cli.js",
   "preferGlobal": true,
