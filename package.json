@@ -20,6 +20,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:mindhelix/mqtt-cli.git"
-  }
+  },
   "license": "MIT"
 }
