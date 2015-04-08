@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A node command line app to send mqtt messages through a mqtt broker. Can also be used to subscribe and listen to incoming messages on a topic.",
   "main": "mqtt-cli.js",
+  "bin": {
+    "mqtt-cli": "./mqtt-cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,5 +17,9 @@
   "dependencies": {
     "mqtt": "^1.0.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mindhelix/mqtt-cli.git"
+  }
   "license": "MIT"
 }
