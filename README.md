@@ -3,8 +3,23 @@
 A node command line app to send mqtt messages through a mqtt broker. Can also be used to subscribe and listen to incoming messages on a topic.
 
 
-## Installation & Usage
+## Installation
 
-Clone the repository, browse to the directory and do `npm install`. You will need Node.js v0.10.36 or higher.
+    $ [sudo] npm install mqtt-cli -g
 
-Usage: `node mqtt-cli topic message`. See `node mqtt-cli --help` for more details.
+
+## Usage:
+
+    $ mqtt-cli --help
+
+    Usage: mqtt-cli hostname topic payload
+	     e.g. mqtt-cli test.mosquitto.org Hello "Test hello message"
+
+    Options:
+	   -h : this help option
+	   -w : pass at the end to watch incoming message on the published topic. Usage: mqtt-cli hostname topic payload -w
+
+
+
+**License: MIT**
+**Author: [jinmatt](https://github.com/jinmatt)**
