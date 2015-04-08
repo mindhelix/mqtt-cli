@@ -1,5 +1,7 @@
 # mqtt-cli
 
+[![Join the chat at https://gitter.im/mindhelix/mqtt-cli](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mindhelix/mqtt-cli?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A node command line app to send mqtt messages through a mqtt broker. Can also be used to subscribe and listen to incoming messages on a topic.
 
 
