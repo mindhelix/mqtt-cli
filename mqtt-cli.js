@@ -9,7 +9,7 @@
 
 var mqtt    = require('mqtt');
 
-if (process.argv[2] == '--help' || process.argv[2] == '-h') {
+if (! process.argv[2] || process.argv[2] == '--help' || process.argv[2] == '-h') {
   console.log('Usage: mqtt-cli hostname topic payload \n\te.g. mqtt-cli test.mosquitto.org Hello "Test hello message"');
   console.log('Options: \n\t-h : this help option\n\t-w : pass at the end to watch incoming message on the published topic. Usage: mqtt-cli hostname topic payload -w');
   process.exit(0);
