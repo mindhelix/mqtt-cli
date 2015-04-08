@@ -1,14 +1,12 @@
-# nmbl mqtt
+# mqtt-cli
 
-A node command line app to send mqtt events for nmbl.
-
-Default mqtt server: [mqtt://smartsocket.getmyrico.com](mqtt://smartsocket.getmyrico.com)
+A node command line app to send mqtt messages through a mqtt broker. Can also be used to subscribe and listen to incoming messages on a topic.
 
 
 ## Installation & Usage
 
-Download nmbl-mqtt events application from [https://bitbucket.org/mindhelix/nmbl-mqtt/downloads](here).
+Download mqtt-cli application from [here](https://bitbucket.org/mindhelix/nmbl-mqtt/downloads).
 
 Browse to the directory and do `npm install`. You will need Node.js v0.10.36 or higher.
 
-Usage: `node nmbl topic message`. See `node nmbl --help` for more details.
+Usage: `node mqtt-cli topic message`. See `node nmbl --help` for more details.

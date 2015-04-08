@@ -8,8 +8,8 @@
 var mqtt    = require('mqtt');
 
 if (process.argv[2] == '--help' || process.argv[2] == '-h') {
-  console.log('Usage: node nmbl hostname topic payload \n\te.g. node nmbl smartsocket.getmyrico.com SOC101 toggle:SOC110:0:on');
-  console.log('Options: \n\t-h : this help option\n\t-d : pass at the end to run as deamon. Usage: node nmbl hostname topic payload -d');
+  console.log('Usage: node mqtt-cli hostname topic payload \n\te.g. node mqtt-cli test.mosquitto.org Hello "Test hello message"');
+  console.log('Options: \n\t-h : this help option\n\t-w : pass at the end to watch incoming message on the published topic. Usage: node mqtt-cli hostname topic payload -w');
   process.exit(0);
 }
 
@@ -31,6 +31,6 @@ client.on('message', function (topic, message) {
 });
 
 
-if ( ! deamonOption || deamonOption !== '-d') {
+if ( ! deamonOption || deamonOption !== '-w') {
   client.end();
 }
